@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cozy Coffee Shop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    .jumbotron {
+      background-color: #e09b62bb;
+      box-shadow: 0 4px 8px rgb(0, 0, 0);
+      background-size: cover;
+      color: #000000;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #ffc107;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #f5f1f1;
+    }
+    .section-heading {
+      color: #000000;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .card {
+      box-shadow: 0 4px 8px rgb(0, 0, 0);
+      background-color: #e09b62bb;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand animate__animated animate__fadeInDown" href="#">Cozy Coffee Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto animate__animated animate__fadeInDown">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron header -->
+  <div class="jumbotron jumbotron-fluid animate__animated animate__fadeIn">
+    <div class="container text-center">
+      <h1 class="display-4">Welcome to Cozy Coffee Shop</h1>
+      <p class="lead">Savor the moment with our artisanal brews and delightful treats.</p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="container py-5" id="about">
+    <h2 class="section-heading animate__animated animate__fadeInUp">About Us</h2>
+    <p class="animate__animated animate__fadeInUp">At Cozy Coffee Shop, we are passionate about crafting exceptional coffee beverages and creating a warm, inviting atmosphere for our guests. Our commitment to sustainability and ethical sourcing ensures that every cup you enjoy is not only delicious but also socially responsible.</p>
+  </div>
+
+  <!-- Menu section -->
+  <div class="container py-5" id="menu">
+    <h2 class="section-heading animate__animated animate__fadeInUp">Menu</h2>
+    <div class="row">
+      <div class="col-md-4 animate__animated animate__fadeInLeft">
+        <div class="card">
+          <img src="cafeimage.png/istockphoto-968993540-612x612.jpg" alt="Coffee Beverages" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Coffee Beverages</h3>
+            <p class="card-text">From classic favorites to adventurous concoctions, our skilled baristas craft each beverage with precision and passion.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInUp">
+        <div class="card">
+          <img src= "cafeimage.png/download.jpeg" alt="Pastries" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Pastries</h3>
+            <p class="card-text">Indulge in our freshly baked pastries, prepared daily with locally sourced ingredients.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 animate__animated animate__fadeInRight">
+        <div class="card">
+          <img src="cafeimage.png/istockphoto-1045880988-612x612.jpg" alt="Light Fare" class="card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Light Fare</h3>
+            <p class="card-text">Accompany your coffee with our tantalizing selection of sandwiches and light fare.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events section -->
+  <div class="container py-5" id="events">
+    <h2 class="section-heading animate__animated animate__fadeInUp">Upcoming Events</h2>
+    <ul class="list-group animate__animated animate__fadeInUp">
+      <li class="list-group-item">Poetry Reading - May 1st, 7 PM</li>
+      <li class="list-group-item">Live Music Performance - May 15th, 8 PM</li>
+      <li class="list-group-item">Community Gathering - June 1st, 5 PM</li>
+    </ul>
+  </div>
+
+  <!-- Contact section -->
+  <div class="container py-5" id="contact">
+    <h2 class="section-heading animate__animated animate__fadeInUp">Contact Us</h2>
+    <form class="animate__animated animate__fadeInUp">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; Cozy Coffee Shop 2023</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.
